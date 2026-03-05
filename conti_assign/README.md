@@ -37,7 +37,7 @@ The testbench performs the following tasks:
 -----------------------------------------
 
 ## Simulation Output
-
+...
 Output when B is selected as 0
 Time    A B D | C E
 0       1 0 0 | x x
@@ -49,7 +49,7 @@ Time    A B D | C E
 0       1 1 0 | x x
 5       1 1 0 | 1 x
 10      1 1 0 | 1 1
-
+...
 -----------------------------------------
 
 ## Key Concept
