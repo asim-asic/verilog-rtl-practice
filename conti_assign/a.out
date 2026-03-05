@@ -1,0 +1,57 @@
+#! /usr/local/bin/vvp
+:ivl_version "13.0 (devel)" "(s20221226-251-g09f3ebfc8)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "/usr/local/lib/ivl/system.vpi";
+:vpi_module "/usr/local/lib/ivl/vhdl_sys.vpi";
+:vpi_module "/usr/local/lib/ivl/vhdl_textio.vpi";
+:vpi_module "/usr/local/lib/ivl/v2005_math.vpi";
+:vpi_module "/usr/local/lib/ivl/va_math.vpi";
+S_0x59544b7c1de0 .scope module, "tb_continuous_assign" "tb_continuous_assign" 2 1;
+ .timescale 0 0;
+v0x59544b80ed00_0 .var "A", 0 0;
+v0x59544b80edc0_0 .var "B", 0 0;
+v0x59544b80ee60_0 .net "C", 0 0, L_0x59544b80f120;  1 drivers
+v0x59544b80ef60_0 .var "D", 0 0;
+v0x59544b80f030_0 .net "E", 0 0, L_0x59544b80f320;  1 drivers
+S_0x59544b7c1f70 .scope module, "uut" "continuous_assign" 2 5, 3 1 0, S_0x59544b7c1de0;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "A";
+    .port_info 1 /INPUT 1 "B";
+    .port_info 2 /INPUT 1 "D";
+    .port_info 3 /OUTPUT 1 "C";
+    .port_info 4 /OUTPUT 1 "E";
+L_0x59544b80f120/d .functor AND 1, v0x59544b80ed00_0, v0x59544b80edc0_0, C4<1>, C4<1>;
+L_0x59544b80f120 .delay 1 (5,5,5) L_0x59544b80f120/d;
+L_0x59544b80f320/d .functor OR 1, L_0x59544b80f120, v0x59544b80ef60_0, C4<0>, C4<0>;
+L_0x59544b80f320 .delay 1 (5,5,5) L_0x59544b80f320/d;
+v0x59544b7c2150_0 .net "A", 0 0, v0x59544b80ed00_0;  1 drivers
+v0x59544b80e930_0 .net "B", 0 0, v0x59544b80edc0_0;  1 drivers
+v0x59544b80e9f0_0 .net "C", 0 0, L_0x59544b80f120;  alias, 1 drivers
+v0x59544b80ea90_0 .net "D", 0 0, v0x59544b80ef60_0;  1 drivers
+v0x59544b80eb50_0 .net "E", 0 0, L_0x59544b80f320;  alias, 1 drivers
+    .scope S_0x59544b7c1de0;
+T_0 ;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x59544b80ed00_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x59544b80edc0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x59544b80ef60_0, 0, 1;
+    %delay 20, 0;
+    %vpi_call 2 13 "$finish" {0 0 0};
+    %end;
+    .thread T_0;
+    .scope S_0x59544b7c1de0;
+T_1 ;
+    %vpi_call 2 19 "$display", "Output when B is selected as 1" {0 0 0};
+    %vpi_call 2 20 "$display", "Time\011A B D | C E" {0 0 0};
+    %vpi_call 2 21 "$monitor", "%0t\011%0b %0b %0b | %0b %0b", $time, v0x59544b80ed00_0, v0x59544b80edc0_0, v0x59544b80ef60_0, v0x59544b80ee60_0, v0x59544b80f030_0 {0 0 0};
+    %end;
+    .thread T_1;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "tb_continuous_assign.v";
+    "continuous_assign.v";
