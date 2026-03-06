@@ -6,8 +6,8 @@ Design a combinational circuit using continuous assignments.
 
 Logic implemented:
 
-B = A AND C (with 3 ns delay)
-C = NOT B (with 2 ns delay)
+- B = A AND C (with 3 ns delay)
+- C = NOT B (with 2 ns delay)
 
 It creates a feedback loop between B and C.
 
