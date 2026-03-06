@@ -1,0 +1,4 @@
+if i change inputs too quickly that mean 10ns, 15ns, 16ns, 17ns in this case the circuit does not get enough time to settle, so output Z remains unknown(X)
+Best practice use delays like 10ns, 10ns, 10ns so circuit could have enough time to get settle.
+
+Output will get at worst case delay, i.e. 5 + 5 + 5 = 15
