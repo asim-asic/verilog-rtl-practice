@@ -1,0 +1,11 @@
+Output of Full Adder
+Time	A	B	Cin	|	Sum	Cout
+0	0	0	0	|	0	0
+10	0	0	1	|	1	0
+20	0	1	0	|	1	0
+30	0	1	1	|	0	1
+40	1	0	0	|	1	0
+50	1	0	1	|	0	1
+60	1	1	0	|	0	1
+70	1	1	1	|	1	1
+tb_full_adder.v:18: $finish called at 80 (1s)
