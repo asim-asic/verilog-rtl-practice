@@ -22,6 +22,9 @@ Outputs:
 The 4-bit adder is constructed by instantiating the `full_adder` module located in:
 	`../full_adder/full_adder.v`
 
+## Architecture
+
+![4-bit Ripple Carry Adder] (four_bit_FA_architecture.png)
 ## Files
 
 - `full_adder.v` → 1-bit fulll adder module(used for instatiation) 
