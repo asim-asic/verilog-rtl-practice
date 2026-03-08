@@ -15,6 +15,19 @@ The design adds two input bits (A, B) and a carry input (Cin) to produce a sum b
 - `output.txt` → Simulation output
 - `README.md` → Project Documentation
 
+## Simulation Result
+
+| Time | A | B | Cin | Sum | Cout |
+|-----|---|---|-----|-----|------|
+| 0   | 0 | 0 | 0   | 0   | 0 |
+| 10  | 0 | 0 | 1   | 1   | 0 |
+| 20  | 0 | 1 | 0   | 1   | 0 |
+| 30  | 0 | 1 | 1   | 0   | 1 |
+| 40  | 1 | 0 | 0   | 1   | 0 |
+| 50  | 1 | 0 | 1   | 0   | 1 |
+| 60  | 1 | 1 | 0   | 0   | 1 |
+| 70  | 1 | 1 | 1   | 1   | 1 |
+
 ## License
 
 This project is licensed under the MIT License.
