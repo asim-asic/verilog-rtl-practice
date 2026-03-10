@@ -17,30 +17,30 @@ Understanding the difference between these two assignment types is essential whe
 The module "sequential_module" contains two "always" blocks triggered on the positive edge of the clock.
 
 Blocking Assignment
-
+```
 A = B;
 B = A;
-
+```
 Blocking assignments execute sequentially within the procedural block.
 The second statement uses the updated value from the first statement.
 
 ---
 
 Non-Blocking Assignment
-
+```
 C <= D;
 D <= C;
-
+```
 Non-blocking assignments update concurrently at the clock edge.
 All right-hand side expressions are evaluated first, and updates occur simultaneously.
 
 ---
-
 ## Key Concept
 
-Assignment Type| Operator| Execution Behavior
-Blocking| "="| Executes sequentially within the block
-Non-Blocking| "<="| Updates occur concurrently at the clock edge
+| Assignment Type | Operator | Execution Behavior |
+|-----------------|----------|--------------------|
+| Blocking        | `=`      | Executes sequentially within the block |
+| Non-Blocking    | `<=`     | Updates occur concurrently at the clock edge |
 
 ## Design rule used in RTL design:
 
