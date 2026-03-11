@@ -1,0 +1,16 @@
+Output of D Flip Flop :
+Time	CLK	D	Q
+0	0	0	x
+5	1	0	0
+10	0	1	0
+15	1	1	1
+20	0	1	1
+25	1	1	1
+27	1	0	1
+30	0	0	1
+33	0	1	1
+35	1	1	1
+36	1	0	1
+40	0	0	1
+45	1	0	0
+tb_DFF.v:26: $finish called at 46 (1s)
