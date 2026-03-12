@@ -29,7 +29,7 @@ module tb_JKFF();
 		#10 J = 1'b0; K = 1'b1;  //Reset
 		#10 J = 1'b1; K = 1'b1;  //Toggle
 		
-		#20 
+		#40 
 		$display("Simulation Finished");
 		$finish();
 	end
