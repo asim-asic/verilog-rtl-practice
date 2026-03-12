@@ -27,7 +27,10 @@ The projects start from basic combinational logic and gradually move toward sequ
    Blocking vs Non-Blocking assignment example
 
 7. **DFF**  
-   Positive edge-triggered D Flip-Flop
+   Positive edge-triggered D Flip Flop
+
+8. **JKFF**
+   Negative edge-triggered JK Flip Flop
 
 ---
 
