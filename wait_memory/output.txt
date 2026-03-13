@@ -1,0 +1,10 @@
+Output of memory :
+TIME	WR	DATA_IN	DATA_OUT
+0	0	0	xx
+10	0	dd	xx
+20	1	dd	xx
+30	0	dd	dd
+40	0	5e	dd
+50	1	5e	dd
+60	0	5e	5e
+tb_wait_memory.v:23: $finish called at 110 (1s)
