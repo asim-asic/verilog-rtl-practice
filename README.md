@@ -32,6 +32,9 @@ The projects start from basic combinational logic and gradually move toward sequ
 8. **JKFF**		
    Negative edge-triggered JK Flip Flop
 
+9. **wait_memory**
+   A example of wait statement
+
 ---
 
 ## Purpose of this Repository
