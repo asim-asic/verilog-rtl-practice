@@ -43,7 +43,7 @@ Output:
 ## Boolean Expression
 
 ```
-F = (~S1 & ~S0 & I0) | (~S1 &  S0 & I1) | ( S1 & ~S0 & I2) | ( S1 &  S0 & I3)
+F = A'B'.I0 + A'B.I1 + AB'I2 + ABI3 
 ```
 ---
 

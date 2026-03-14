@@ -21,7 +21,7 @@ In a **2x1 multiplexer**, two inputs are available and one is selected depending
 The Boolean equation of a 2x1 MUX is:
 
 ```
-F = (~A & I0) | (A & I1)
+F = A'.I0 + A.I1
 ```
 
 Where:
