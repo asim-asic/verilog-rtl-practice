@@ -43,7 +43,7 @@ Output:
 ## Boolean Expression
 
 ```
-F = A'B'.I0 + A'B.I1 + AB'I2 + ABI3 
+F = A'B'.I0 + A'B.I1 + AB'.I2 + AB.I3 
 ```
 ---
 
