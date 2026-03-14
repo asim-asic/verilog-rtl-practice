@@ -31,7 +31,7 @@ module tb_mux_4x1();
 	begin
 		$display("4:1 Multiplexer Output is:");
 		$display("TIME\tI0\tI1\tI2\tI3\tSEL\tF");
-		$monitor("%0t\t%0b\t%0b\t%0b\t%0b\t%0b\t%0b",$time, I0, I1, I2, I3, Sel, F);
+		$monitor("%0t\t%0b\t%0b\t%0b\t%0b\t%2b\t%0b",$time, I0, I1, I2, I3, Sel, F);
 	end
 endmodule
 	
