@@ -1,0 +1,11 @@
+2:1 Multiplexer Output is:
+TIME	I0	I1	A	F
+0	0	0	0	0
+10	0	0	1	0
+20	0	1	0	0
+30	0	1	1	1
+40	1	0	0	1
+50	1	0	1	0
+60	1	1	0	1
+70	1	1	1	1
+tb_mux_2x1.v:18: $finish called at 80 (1s)
