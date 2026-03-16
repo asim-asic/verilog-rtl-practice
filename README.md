@@ -35,6 +35,10 @@ The projects start from basic combinational logic and gradually move toward sequ
 9. **wait_memory**
    A example of wait statement
 
+10. **behav/code_converter** 
+   Behavioural modeling implementation of an Excess-3 code converter using mealy FSM
+	 
+
 ---
 
 ## Purpose of this Repository
