@@ -1,0 +1,7 @@
+## Note
+
+- This implementation is intended for **simulation understanding only**.
+- The `while` loop executes instantly (time = 0) unless delays are introduced.
+- Adding `#delay` affects only **simulation time**, not hardware behavior.
+- Such constructs are **not synthesizable** and cannot be used in real ASIC/FPGA designs.
+- In real designs, counters are implemented using **clock-driven sequential logic (`always @(posedge clk)`)**.
