@@ -29,14 +29,14 @@ The projects start from basic combinational logic and gradually move toward sequ
 7. **DFF**  
    Positive edge-triggered D Flip Flop
 
-8. **JKFF**		
+8. **JKFF**
    Negative edge-triggered JK Flip Flop
 
 9. **wait_memory**
-   A example of wait statement
+    A example of wait statement
 
-10. **behav/code_converter** 
-   Behavioural modeling implementation of an Excess-3 code converter using mealy FSM
+12. **behav/code_converter**
+    Behavioural modeling implementation of an Excess-3 code converter using mealy FSM
 	 
 
 ---
